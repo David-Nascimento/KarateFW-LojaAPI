@@ -1,0 +1,3 @@
+message:
+  error: "Tudo deu errado... Correeeeeeee!"
+header_auth: { "accept": "application/json", "Content-Type": "application/json'" }

@@ -1,0 +1,3 @@
+qa:
+  env: 'qa'
+  lojaURL: 'https://serverest.dev'
