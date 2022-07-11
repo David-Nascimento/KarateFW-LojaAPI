@@ -1,7 +1,0 @@
-uat:
-  env: 'uat'
-  serverest: 'https://serverest.dev'
-
-qa:
-  env: 'qa'
-  name_url: ''

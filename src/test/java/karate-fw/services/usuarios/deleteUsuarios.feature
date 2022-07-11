@@ -1,7 +1,7 @@
 Feature: Deve retornar o usuario
 
   Background:
-    * url "https://serverest.dev"
+    * url serverest
 
   Scenario Outline:  Delete simples
     * def hash = call read('postUsuarios.feature@novoUser')

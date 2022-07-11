@@ -1,4 +1,4 @@
-package features.usuarios;
+package services;
 
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
@@ -7,7 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
-import static karate-fw.services.support.javautils.cucumber.CucumberUtils.generateReport;
+import static cucumber.CucumberUtils.generateReport;
 
 
 public class RunTests {
@@ -24,7 +24,7 @@ public class RunTests {
         Runner.Builder testBuilder = Runner.path("classpath:karate-fw");
 
         //Tags setup
-        //testBuilder.tags("");
+        testBuilder.tags("@novoUser");
 
         String env = System.getProperty("karate.env");
         String tags = System.getProperty("karate.options");

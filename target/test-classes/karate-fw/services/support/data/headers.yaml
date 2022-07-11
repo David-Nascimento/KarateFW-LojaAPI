@@ -1,4 +1,0 @@
-default_errors:
-  messages:
-    message_not_found: 'Not Found'
-"header_auth": { "accept": "application/json", "Content-Type": "application/json" }

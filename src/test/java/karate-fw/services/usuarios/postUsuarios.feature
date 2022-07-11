@@ -1,7 +1,8 @@
 Feature: Criar novo usuario
 
   Background:
-    * url "https://serverest.dev"
+    * url serverest
+    * def hder = read("classpath:karate-fw/services/support/data/headers.yaml")
 
       @novoUser
     Scenario: Cria um novo usuario simples
@@ -16,6 +17,7 @@ Feature: Criar novo usuario
       }
       """
       And request user
+      And headers hder.header
       When method POST
       Then status 201
       * print response

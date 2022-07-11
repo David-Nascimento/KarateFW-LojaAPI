@@ -1,3 +1,18 @@
+package cucumber;
+
+import com.google.gson.JsonArray;
+import com.intuit.karate.core.ScenarioResult;
+import net.masterthought.cucumber.Configuration;
+import net.masterthought.cucumber.ReportBuilder;
+import org.apache.commons.io.FileUtils;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class CucumberUtils {
     public String getFeatureName(ScenarioResult scenarioResult) {
         return scenarioResult.getScenario().getFeature().getName();
