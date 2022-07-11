@@ -2,13 +2,13 @@ Feature: Deve logar e gerar o Token de Acesso
 
   Background:
     * url "https://serverest.dev"
-    * def hd = read("classpath:support/config/headers.yaml")
-    * def auth = read("classpath:features/authentication/payload/user.json")
+    * def hd = read("classpath:karate-fw/services/support/data/headers.yaml")
+    * def auth = read("classpath:karate-fw/services/authentication/payload/user.json")
 
     @Token
     Scenario: Login
       Given path "/login"
-      And headers hd.header_auth
+      And headers hd.header
       And request auth
       When method POST
       Then status 200
