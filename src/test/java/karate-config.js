@@ -3,10 +3,10 @@ function fn(){
     var config = { env: env }
     var headers = {"cache-control": "no-cache"}
     karate.configure('ssl', true)
-    if (!env) { env = 'uat'; }
+    if (!env) { env = 'dev'; }
 
     switch(env) {
-        case 'uat':
+        case 'dev':
             config = karate.read('classpath:karate-fw/services/support/config/domain.yaml')['uat']
         break;
         case 'qa':
@@ -16,6 +16,7 @@ function fn(){
 
     karate.log('karate.env system property was:', env);
     karate.configure('headers', headers);
-    karate.configure('retry', { count: 10, interval: 5000});
+    karate.configure('retry', { count: 10, interval: 5000})
+    config.faker = Java.type('com.github.javafaker.Faker');
     return config;
 }

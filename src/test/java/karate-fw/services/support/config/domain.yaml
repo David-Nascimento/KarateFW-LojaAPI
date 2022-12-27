@@ -1,5 +1,5 @@
 uat:
-  env: 'uat'
+  env: 'dev'
   serverest: 'https://serverest.dev'
 
 qa:

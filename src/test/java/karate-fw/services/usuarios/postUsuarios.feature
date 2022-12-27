@@ -3,21 +3,25 @@ Feature: Criar novo usuario
   Background:
     * url serverest
     * def hder = read("classpath:karate-fw/services/support/data/headers.yaml")
+    * def fakerObj = new faker()
+    * def fName = fakerObj.name().firstName()
+    * def lName = fakerObj.name().lastName()
+    * def mailId = fName+'.'+lName+'@test.com'
 
       @novoUser
     Scenario: Cria um novo usuario simples
       Given path "/usuarios"
+      And headers hder.header
       * def user =
       """
       {
-        "nome": "Fulano da Silva",
-        "email": "patolino955@qa.com.br",
+        "nome": "#(fName)",
+        "email": "#(mailId)",
         "password": "teste",
         "administrador": "true"
       }
       """
       And request user
-      And headers hder.header
       When method POST
       Then status 201
       * print response
