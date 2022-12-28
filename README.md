@@ -1,4 +1,4 @@
-﻿[![Java CI with Maven](https://github.com/David-Nascimento/KarateFW-LojaAPI/actions/workflows/maven.yml/badge.svg)](https://github.com/David-Nascimento/KarateFW-LojaAPI/actions/workflows/maven.yml)
+[![Java CI with Maven and Karate Framework](https://github.com/David-Nascimento/KarateFW-LojaAPI/actions/workflows/maven.yml/badge.svg?branch=main)](https://github.com/David-Nascimento/KarateFW-LojaAPI/actions/workflows/maven.yml)
  
  # Karate Framework API Testing
 ![alt text](https://software-that-matters.com/wp-content/uploads/2020/10/Karate-Mock-feature-1024x576.png)
