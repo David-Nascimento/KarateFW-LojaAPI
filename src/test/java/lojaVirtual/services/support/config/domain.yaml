@@ -4,4 +4,4 @@ uat:
 
 qa:
   env: 'qa'
-  serverest: 'https://serverest.dev'
+  serverest: 'https://serverest.qa'

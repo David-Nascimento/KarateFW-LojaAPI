@@ -2,7 +2,7 @@ Feature: Criar novo usuario
 
   Background:
     * url serverest
-    * def hder = read("classpath:karate-fw/services/support/data/headers.yaml")
+    * def hder = read("classpath:lojaVirtual/services/support/data/headers.yaml")
     * def fakerObj = new faker()
     * def fName = fakerObj.name().firstName()
     * def lName = fakerObj.name().lastName()

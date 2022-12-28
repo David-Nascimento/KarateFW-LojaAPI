@@ -7,10 +7,10 @@ function fn(){
 
     switch(env) {
         case 'dev':
-            config = karate.read('classpath:karate-fw/services/support/config/domain.yaml')['uat']
+            config = karate.read('classpath:lojaVirtual/services/support/config/domain.yaml')['uat']
         break;
         case 'qa':
-            config = karate.read('classpath:karate-fw/services/support/config/domain.yaml')['qa']
+            config = karate.read('classpath:lojaVirtual/services/support/config/domain.yaml')['qa']
         break;
     }
 
