@@ -24,7 +24,7 @@ public class RunTests {
         Runner.Builder testBuilder = Runner.path("classpath:karate-fw");
 
         //Tags setup
-        testBuilder.tags("@novoUser");
+        testBuilder.tags("@userExistente");
 
         String env = System.getProperty("karate.env");
         String tags = System.getProperty("karate.options");
