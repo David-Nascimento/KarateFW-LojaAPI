@@ -1,4 +1,4 @@
-package cucumber;
+package lojaVirtual.services.support.javaUtils.cucumber;
 
 import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
